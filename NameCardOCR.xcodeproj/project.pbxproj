@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		120E0FF82247ACCE007B3E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E0FF72247ACCE007B3E7A /* AppDelegate.swift */; };
+		120E0FFA2247ACCE007B3E7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E0FF92247ACCE007B3E7A /* ViewController.swift */; };
+		120E0FFD2247ACCE007B3E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120E0FFB2247ACCE007B3E7A /* Main.storyboard */; };
+		120E0FFF2247ACCF007B3E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 120E0FFE2247ACCF007B3E7A /* Assets.xcassets */; };
+		120E100D2247ACD0007B3E7A /* NameCardOCRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E100C2247ACD0007B3E7A /* NameCardOCRTests.swift */; };
+		120E10182247ACD0007B3E7A /* NameCardOCRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E10172247ACD0007B3E7A /* NameCardOCRUITests.swift */; };
+		120E10282247ADB8007B3E7A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120E10272247ADB8007B3E7A /* AssetsLibrary.framework */; };
+		120E102A2247ADBF007B3E7A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120E10292247ADBF007B3E7A /* CoreGraphics.framework */; };
+		120E102C2247ADCD007B3E7A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120E102B2247ADCD007B3E7A /* CoreMedia.framework */; };
+		120E102E2247ADD3007B3E7A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120E102D2247ADD3007B3E7A /* CoreFoundation.framework */; };
+		120E10302247ADDF007B3E7A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120E102F2247ADDF007B3E7A /* Accelerate.framework */; };
+		120E10322247AE7C007B3E7A /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E10312247AE7C007B3E7A /* ViewController+Extensions.swift */; };
+		120E10342247AEAC007B3E7A /* VisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E10332247AEAC007B3E7A /* VisionService.swift */; };
+		120E10362247AEE6007B3E7A /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E10352247AEE6007B3E7A /* Image+Extensions.swift */; };
+		120E10382247AF06007B3E7A /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E10372247AF06007B3E7A /* CameraController.swift */; };
+		120E103E2247B110007B3E7A /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 120E103D2247B110007B3E7A /* OpenCVWrapper.mm */; };
+		120E10442247C748007B3E7A /* BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E10432247C748007B3E7A /* BoxService.swift */; };
+		120E10462247D2A1007B3E7A /* FindTextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E10452247D2A1007B3E7A /* FindTextArea.swift */; };
+		120E10482247DB47007B3E7A /* ProcessRecognize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E10472247DB47007B3E7A /* ProcessRecognize.swift */; };
+		122323A52253C621009DE7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122323A42253C621009DE7D4 /* LaunchScreen.storyboard */; };
+		1228F088224F79BD00F71B88 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228F087224F79BD00F71B88 /* ResultViewController.swift */; };
+		1228F08A224F807400F71B88 /* ProcessRecognize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228F089224F807400F71B88 /* ProcessRecognize+Extensions.swift */; };
+		12370E09224E160B00170974 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 12370E08224E160B00170974 /* tessdata */; };
+		125A236D224FD00500B23AF5 /* ResultViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125A236C224FD00500B23AF5 /* ResultViewController+Extensions.swift */; };
+		18C0E9473943EF983A92ED47 /* Pods_NameCardOCRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFEF161EF6286CDBF57023B8 /* Pods_NameCardOCRTests.framework */; };
+		93D4726804849F7EC47948CE /* Pods_NameCardOCRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE331B8CFCA3210530C878BF /* Pods_NameCardOCRUITests.framework */; };
+		CC866AD63128C5B5C71C0546 /* Pods_NameCardOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26E6834487BADBD7A573F6D /* Pods_NameCardOCR.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		120E10092247ACD0007B3E7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 120E0FEC2247ACCE007B3E7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 120E0FF32247ACCE007B3E7A;
+			remoteInfo = NameCardOCR;
+		};
+		120E10142247ACD0007B3E7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 120E0FEC2247ACCE007B3E7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 120E0FF32247ACCE007B3E7A;
+			remoteInfo = NameCardOCR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		120E0FF42247ACCE007B3E7A /* NameCardOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameCardOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		120E0FF72247ACCE007B3E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		120E0FF92247ACCE007B3E7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		120E0FFC2247ACCE007B3E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		120E0FFE2247ACCF007B3E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		120E10032247ACCF007B3E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		120E10082247ACD0007B3E7A /* NameCardOCRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NameCardOCRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		120E100C2247ACD0007B3E7A /* NameCardOCRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardOCRTests.swift; sourceTree = "<group>"; };
+		120E100E2247ACD0007B3E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		120E10132247ACD0007B3E7A /* NameCardOCRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NameCardOCRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		120E10172247ACD0007B3E7A /* NameCardOCRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardOCRUITests.swift; sourceTree = "<group>"; };
+		120E10192247ACD0007B3E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		120E10272247ADB8007B3E7A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		120E10292247ADBF007B3E7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		120E102B2247ADCD007B3E7A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		120E102D2247ADD3007B3E7A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		120E102F2247ADDF007B3E7A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		120E10312247AE7C007B3E7A /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		120E10332247AEAC007B3E7A /* VisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionService.swift; sourceTree = "<group>"; };
+		120E10352247AEE6007B3E7A /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
+		120E10372247AF06007B3E7A /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		120E103B2247B10F007B3E7A /* NameCardOCR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NameCardOCR-Bridging-Header.h"; sourceTree = "<group>"; };
+		120E103C2247B110007B3E7A /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		120E103D2247B110007B3E7A /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		120E103F2247B169007B3E7A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		120E10432247C748007B3E7A /* BoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxService.swift; sourceTree = "<group>"; };
+		120E10452247D2A1007B3E7A /* FindTextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTextArea.swift; sourceTree = "<group>"; };
+		120E10472247DB47007B3E7A /* ProcessRecognize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRecognize.swift; sourceTree = "<group>"; };
+		122323A42253C621009DE7D4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1228F087224F79BD00F71B88 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1228F089224F807400F71B88 /* ProcessRecognize+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessRecognize+Extensions.swift"; sourceTree = "<group>"; };
+		12370E08224E160B00170974 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		125A236C224FD00500B23AF5 /* ResultViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResultViewController+Extensions.swift"; sourceTree = "<group>"; };
+		221F8C23995DF39925D4F41E /* Pods-NameCardOCRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCRTests.release.xcconfig"; path = "Target Support Files/Pods-NameCardOCRTests/Pods-NameCardOCRTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A341C78F0E87306EC99C28F /* Pods-NameCardOCR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCR.debug.xcconfig"; path = "Target Support Files/Pods-NameCardOCR/Pods-NameCardOCR.debug.xcconfig"; sourceTree = "<group>"; };
+		84B7D53306E699D6BC5CD642 /* Pods-NameCardOCRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCRUITests.debug.xcconfig"; path = "Target Support Files/Pods-NameCardOCRUITests/Pods-NameCardOCRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFEF161EF6286CDBF57023B8 /* Pods_NameCardOCRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NameCardOCRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C24B303C76AC13F361D36C /* Pods-NameCardOCRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCRUITests.release.xcconfig"; path = "Target Support Files/Pods-NameCardOCRUITests/Pods-NameCardOCRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA43A51A80D5BE5FAC2CAE1B /* Pods-NameCardOCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCR.release.xcconfig"; path = "Target Support Files/Pods-NameCardOCR/Pods-NameCardOCR.release.xcconfig"; sourceTree = "<group>"; };
+		E26E6834487BADBD7A573F6D /* Pods_NameCardOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NameCardOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5960CB93E30A79B37A33684 /* Pods-NameCardOCRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCRTests.debug.xcconfig"; path = "Target Support Files/Pods-NameCardOCRTests/Pods-NameCardOCRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE331B8CFCA3210530C878BF /* Pods_NameCardOCRUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NameCardOCRUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		120E0FF12247ACCE007B3E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120E10302247ADDF007B3E7A /* Accelerate.framework in Frameworks */,
+				120E102E2247ADD3007B3E7A /* CoreFoundation.framework in Frameworks */,
+				120E102C2247ADCD007B3E7A /* CoreMedia.framework in Frameworks */,
+				120E102A2247ADBF007B3E7A /* CoreGraphics.framework in Frameworks */,
+				120E10282247ADB8007B3E7A /* AssetsLibrary.framework in Frameworks */,
+				CC866AD63128C5B5C71C0546 /* Pods_NameCardOCR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		120E10052247ACD0007B3E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C0E9473943EF983A92ED47 /* Pods_NameCardOCRTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		120E10102247ACD0007B3E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D4726804849F7EC47948CE /* Pods_NameCardOCRUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12089D2322491EDE00F04956 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12370E08224E160B00170974 /* tessdata */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		120E0FEB2247ACCE007B3E7A = {
+			isa = PBXGroup;
+			children = (
+				120E0FF62247ACCE007B3E7A /* NameCardOCR */,
+				120E100B2247ACD0007B3E7A /* NameCardOCRTests */,
+				120E10162247ACD0007B3E7A /* NameCardOCRUITests */,
+				120E0FF52247ACCE007B3E7A /* Products */,
+				B84D440661D66D543590C873 /* Pods */,
+				78DA3B73CF5A36E597DCB6E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		120E0FF52247ACCE007B3E7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				120E0FF42247ACCE007B3E7A /* NameCardOCR.app */,
+				120E10082247ACD0007B3E7A /* NameCardOCRTests.xctest */,
+				120E10132247ACD0007B3E7A /* NameCardOCRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		120E0FF62247ACCE007B3E7A /* NameCardOCR */ = {
+			isa = PBXGroup;
+			children = (
+				12089D2322491EDE00F04956 /* Supporting Files */,
+				120E0FF72247ACCE007B3E7A /* AppDelegate.swift */,
+				120E0FF92247ACCE007B3E7A /* ViewController.swift */,
+				120E10312247AE7C007B3E7A /* ViewController+Extensions.swift */,
+				120E0FFB2247ACCE007B3E7A /* Main.storyboard */,
+				122323A42253C621009DE7D4 /* LaunchScreen.storyboard */,
+				120E0FFE2247ACCF007B3E7A /* Assets.xcassets */,
+				120E10032247ACCF007B3E7A /* Info.plist */,
+				120E103C2247B110007B3E7A /* OpenCVWrapper.h */,
+				120E103D2247B110007B3E7A /* OpenCVWrapper.mm */,
+				120E103B2247B10F007B3E7A /* NameCardOCR-Bridging-Header.h */,
+				120E103F2247B169007B3E7A /* PrefixHeader.pch */,
+				120E10352247AEE6007B3E7A /* Image+Extensions.swift */,
+				120E10372247AF06007B3E7A /* CameraController.swift */,
+				120E10332247AEAC007B3E7A /* VisionService.swift */,
+				120E10432247C748007B3E7A /* BoxService.swift */,
+				120E10452247D2A1007B3E7A /* FindTextArea.swift */,
+				120E10472247DB47007B3E7A /* ProcessRecognize.swift */,
+				1228F089224F807400F71B88 /* ProcessRecognize+Extensions.swift */,
+				1228F087224F79BD00F71B88 /* ResultViewController.swift */,
+				125A236C224FD00500B23AF5 /* ResultViewController+Extensions.swift */,
+			);
+			path = NameCardOCR;
+			sourceTree = "<group>";
+		};
+		120E100B2247ACD0007B3E7A /* NameCardOCRTests */ = {
+			isa = PBXGroup;
+			children = (
+				120E100C2247ACD0007B3E7A /* NameCardOCRTests.swift */,
+				120E100E2247ACD0007B3E7A /* Info.plist */,
+			);
+			path = NameCardOCRTests;
+			sourceTree = "<group>";
+		};
+		120E10162247ACD0007B3E7A /* NameCardOCRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				120E10172247ACD0007B3E7A /* NameCardOCRUITests.swift */,
+				120E10192247ACD0007B3E7A /* Info.plist */,
+			);
+			path = NameCardOCRUITests;
+			sourceTree = "<group>";
+		};
+		78DA3B73CF5A36E597DCB6E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				120E102F2247ADDF007B3E7A /* Accelerate.framework */,
+				120E102D2247ADD3007B3E7A /* CoreFoundation.framework */,
+				120E102B2247ADCD007B3E7A /* CoreMedia.framework */,
+				120E10292247ADBF007B3E7A /* CoreGraphics.framework */,
+				120E10272247ADB8007B3E7A /* AssetsLibrary.framework */,
+				E26E6834487BADBD7A573F6D /* Pods_NameCardOCR.framework */,
+				AFEF161EF6286CDBF57023B8 /* Pods_NameCardOCRTests.framework */,
+				FE331B8CFCA3210530C878BF /* Pods_NameCardOCRUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B84D440661D66D543590C873 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A341C78F0E87306EC99C28F /* Pods-NameCardOCR.debug.xcconfig */,
+				CA43A51A80D5BE5FAC2CAE1B /* Pods-NameCardOCR.release.xcconfig */,
+				F5960CB93E30A79B37A33684 /* Pods-NameCardOCRTests.debug.xcconfig */,
+				221F8C23995DF39925D4F41E /* Pods-NameCardOCRTests.release.xcconfig */,
+				84B7D53306E699D6BC5CD642 /* Pods-NameCardOCRUITests.debug.xcconfig */,
+				B6C24B303C76AC13F361D36C /* Pods-NameCardOCRUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		120E0FF32247ACCE007B3E7A /* NameCardOCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 120E101C2247ACD0007B3E7A /* Build configuration list for PBXNativeTarget "NameCardOCR" */;
+			buildPhases = (
+				780B0191E47463A721B04773 /* [CP] Check Pods Manifest.lock */,
+				120E0FF02247ACCE007B3E7A /* Sources */,
+				120E0FF12247ACCE007B3E7A /* Frameworks */,
+				120E0FF22247ACCE007B3E7A /* Resources */,
+				D89F8A151A31536FDD04BC54 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NameCardOCR;
+			productName = NameCardOCR;
+			productReference = 120E0FF42247ACCE007B3E7A /* NameCardOCR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		120E10072247ACD0007B3E7A /* NameCardOCRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 120E101F2247ACD0007B3E7A /* Build configuration list for PBXNativeTarget "NameCardOCRTests" */;
+			buildPhases = (
+				BB902E8564BBDD26806751D3 /* [CP] Check Pods Manifest.lock */,
+				120E10042247ACD0007B3E7A /* Sources */,
+				120E10052247ACD0007B3E7A /* Frameworks */,
+				120E10062247ACD0007B3E7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				120E100A2247ACD0007B3E7A /* PBXTargetDependency */,
+			);
+			name = NameCardOCRTests;
+			productName = NameCardOCRTests;
+			productReference = 120E10082247ACD0007B3E7A /* NameCardOCRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		120E10122247ACD0007B3E7A /* NameCardOCRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 120E10222247ACD0007B3E7A /* Build configuration list for PBXNativeTarget "NameCardOCRUITests" */;
+			buildPhases = (
+				C826BA31506F7DEF0625FC32 /* [CP] Check Pods Manifest.lock */,
+				120E100F2247ACD0007B3E7A /* Sources */,
+				120E10102247ACD0007B3E7A /* Frameworks */,
+				120E10112247ACD0007B3E7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				120E10152247ACD0007B3E7A /* PBXTargetDependency */,
+			);
+			name = NameCardOCRUITests;
+			productName = NameCardOCRUITests;
+			productReference = 120E10132247ACD0007B3E7A /* NameCardOCRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		120E0FEC2247ACCE007B3E7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Nguyễn Quang Đức";
+				TargetAttributes = {
+					120E0FF32247ACCE007B3E7A = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					120E10072247ACD0007B3E7A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 120E0FF32247ACCE007B3E7A;
+					};
+					120E10122247ACD0007B3E7A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 120E0FF32247ACCE007B3E7A;
+					};
+				};
+			};
+			buildConfigurationList = 120E0FEF2247ACCE007B3E7A /* Build configuration list for PBXProject "NameCardOCR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 120E0FEB2247ACCE007B3E7A;
+			productRefGroup = 120E0FF52247ACCE007B3E7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				120E0FF32247ACCE007B3E7A /* NameCardOCR */,
+				120E10072247ACD0007B3E7A /* NameCardOCRTests */,
+				120E10122247ACD0007B3E7A /* NameCardOCRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		120E0FF22247ACCE007B3E7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12370E09224E160B00170974 /* tessdata in Resources */,
+				122323A52253C621009DE7D4 /* LaunchScreen.storyboard in Resources */,
+				120E0FFF2247ACCF007B3E7A /* Assets.xcassets in Resources */,
+				120E0FFD2247ACCE007B3E7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		120E10062247ACD0007B3E7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		120E10112247ACD0007B3E7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		780B0191E47463A721B04773 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NameCardOCR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB902E8564BBDD26806751D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NameCardOCRTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C826BA31506F7DEF0625FC32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NameCardOCRUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89F8A151A31536FDD04BC54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NameCardOCR/Pods-NameCardOCR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Anchors/Anchors.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractiOSSDK/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NameCardOCR/Pods-NameCardOCR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		120E0FF02247ACCE007B3E7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120E10382247AF06007B3E7A /* CameraController.swift in Sources */,
+				120E0FFA2247ACCE007B3E7A /* ViewController.swift in Sources */,
+				120E10482247DB47007B3E7A /* ProcessRecognize.swift in Sources */,
+				120E103E2247B110007B3E7A /* OpenCVWrapper.mm in Sources */,
+				120E10362247AEE6007B3E7A /* Image+Extensions.swift in Sources */,
+				120E10322247AE7C007B3E7A /* ViewController+Extensions.swift in Sources */,
+				120E10462247D2A1007B3E7A /* FindTextArea.swift in Sources */,
+				125A236D224FD00500B23AF5 /* ResultViewController+Extensions.swift in Sources */,
+				120E10442247C748007B3E7A /* BoxService.swift in Sources */,
+				120E0FF82247ACCE007B3E7A /* AppDelegate.swift in Sources */,
+				120E10342247AEAC007B3E7A /* VisionService.swift in Sources */,
+				1228F088224F79BD00F71B88 /* ResultViewController.swift in Sources */,
+				1228F08A224F807400F71B88 /* ProcessRecognize+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		120E10042247ACD0007B3E7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120E100D2247ACD0007B3E7A /* NameCardOCRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		120E100F2247ACD0007B3E7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120E10182247ACD0007B3E7A /* NameCardOCRUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		120E100A2247ACD0007B3E7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 120E0FF32247ACCE007B3E7A /* NameCardOCR */;
+			targetProxy = 120E10092247ACD0007B3E7A /* PBXContainerItemProxy */;
+		};
+		120E10152247ACD0007B3E7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 120E0FF32247ACCE007B3E7A /* NameCardOCR */;
+			targetProxy = 120E10142247ACD0007B3E7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		120E0FFB2247ACCE007B3E7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				120E0FFC2247ACCE007B3E7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		120E101A2247ACD0007B3E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		120E101B2247ACD0007B3E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		120E101D2247ACD0007B3E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A341C78F0E87306EC99C28F /* Pods-NameCardOCR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS72W76QNP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NameCardOCR/PrefixHeader.pch";
+				INFOPLIST_FILE = NameCardOCR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcmut.NameCardOCR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NameCardOCR/NameCardOCR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		120E101E2247ACD0007B3E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA43A51A80D5BE5FAC2CAE1B /* Pods-NameCardOCR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS72W76QNP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NameCardOCR/PrefixHeader.pch";
+				INFOPLIST_FILE = NameCardOCR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcmut.NameCardOCR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NameCardOCR/NameCardOCR-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		120E10202247ACD0007B3E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5960CB93E30A79B37A33684 /* Pods-NameCardOCRTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS72W76QNP;
+				INFOPLIST_FILE = NameCardOCRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcmut.NameCardOCRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NameCardOCR.app/NameCardOCR";
+			};
+			name = Debug;
+		};
+		120E10212247ACD0007B3E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221F8C23995DF39925D4F41E /* Pods-NameCardOCRTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS72W76QNP;
+				INFOPLIST_FILE = NameCardOCRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcmut.NameCardOCRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NameCardOCR.app/NameCardOCR";
+			};
+			name = Release;
+		};
+		120E10232247ACD0007B3E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B7D53306E699D6BC5CD642 /* Pods-NameCardOCRUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS72W76QNP;
+				INFOPLIST_FILE = NameCardOCRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcmut.NameCardOCRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NameCardOCR;
+			};
+			name = Debug;
+		};
+		120E10242247ACD0007B3E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C24B303C76AC13F361D36C /* Pods-NameCardOCRUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS72W76QNP;
+				INFOPLIST_FILE = NameCardOCRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcmut.NameCardOCRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NameCardOCR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		120E0FEF2247ACCE007B3E7A /* Build configuration list for PBXProject "NameCardOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120E101A2247ACD0007B3E7A /* Debug */,
+				120E101B2247ACD0007B3E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		120E101C2247ACD0007B3E7A /* Build configuration list for PBXNativeTarget "NameCardOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120E101D2247ACD0007B3E7A /* Debug */,
+				120E101E2247ACD0007B3E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		120E101F2247ACD0007B3E7A /* Build configuration list for PBXNativeTarget "NameCardOCRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120E10202247ACD0007B3E7A /* Debug */,
+				120E10212247ACD0007B3E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		120E10222247ACD0007B3E7A /* Build configuration list for PBXNativeTarget "NameCardOCRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120E10232247ACD0007B3E7A /* Debug */,
+				120E10242247ACD0007B3E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 120E0FEC2247ACCE007B3E7A /* Project object */;
+}

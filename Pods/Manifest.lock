@@ -1,0 +1,24 @@
+PODS:
+  - Anchors (2.4.0)
+  - OpenCV2 (4.0.1)
+  - TesseractiOSSDK (4.0.5)
+
+DEPENDENCIES:
+  - Anchors
+  - OpenCV2
+  - TesseractiOSSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Anchors
+    - OpenCV2
+    - TesseractiOSSDK
+
+SPEC CHECKSUMS:
+  Anchors: 75614cac462e063b395386e31eb593a856d831a8
+  OpenCV2: e770b5a33a269953e6c29b44acbb0433f08ec5ae
+  TesseractiOSSDK: 665cbfd12b5fbc61e5a3b635afd7370a28f23ec8
+
+PODFILE CHECKSUM: 2c8335f70213608162a558c2aaf22dbf1b948af5
+
+COCOAPODS: 1.6.1

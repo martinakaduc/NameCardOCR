@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-NameCardOCR/Pods-NameCardOCR-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Anchors/Anchors.framework
+${BUILT_PRODUCTS_DIR}/TesseractiOSSDK/TesseractOCR.framework

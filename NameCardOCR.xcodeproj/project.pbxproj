@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		120E0FF82247ACCE007B3E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E0FF72247ACCE007B3E7A /* AppDelegate.swift */; };
 		120E0FFA2247ACCE007B3E7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E0FF92247ACCE007B3E7A /* ViewController.swift */; };
-		120E0FFD2247ACCE007B3E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120E0FFB2247ACCE007B3E7A /* Main.storyboard */; };
 		120E0FFF2247ACCF007B3E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 120E0FFE2247ACCF007B3E7A /* Assets.xcassets */; };
 		120E100D2247ACD0007B3E7A /* NameCardOCRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E100C2247ACD0007B3E7A /* NameCardOCRTests.swift */; };
 		120E10182247ACD0007B3E7A /* NameCardOCRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E10172247ACD0007B3E7A /* NameCardOCRUITests.swift */; };
@@ -33,6 +32,7 @@
 		125A236D224FD00500B23AF5 /* ResultViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125A236C224FD00500B23AF5 /* ResultViewController+Extensions.swift */; };
 		18C0E9473943EF983A92ED47 /* Pods_NameCardOCRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFEF161EF6286CDBF57023B8 /* Pods_NameCardOCRTests.framework */; };
 		93D4726804849F7EC47948CE /* Pods_NameCardOCRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE331B8CFCA3210530C878BF /* Pods_NameCardOCRUITests.framework */; };
+		AC538593247BF53E0084AA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC538592247BF53E0084AA32 /* Main.storyboard */; };
 		CC866AD63128C5B5C71C0546 /* Pods_NameCardOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26E6834487BADBD7A573F6D /* Pods_NameCardOCR.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,6 @@
 		120E0FF42247ACCE007B3E7A /* NameCardOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameCardOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		120E0FF72247ACCE007B3E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		120E0FF92247ACCE007B3E7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		120E0FFC2247ACCE007B3E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		120E0FFE2247ACCF007B3E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		120E10032247ACCF007B3E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		120E10082247ACD0007B3E7A /* NameCardOCRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NameCardOCRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +89,7 @@
 		221F8C23995DF39925D4F41E /* Pods-NameCardOCRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCRTests.release.xcconfig"; path = "Target Support Files/Pods-NameCardOCRTests/Pods-NameCardOCRTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A341C78F0E87306EC99C28F /* Pods-NameCardOCR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCR.debug.xcconfig"; path = "Target Support Files/Pods-NameCardOCR/Pods-NameCardOCR.debug.xcconfig"; sourceTree = "<group>"; };
 		84B7D53306E699D6BC5CD642 /* Pods-NameCardOCRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCRUITests.debug.xcconfig"; path = "Target Support Files/Pods-NameCardOCRUITests/Pods-NameCardOCRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC538592247BF53E0084AA32 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AFEF161EF6286CDBF57023B8 /* Pods_NameCardOCRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NameCardOCRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C24B303C76AC13F361D36C /* Pods-NameCardOCRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCRUITests.release.xcconfig"; path = "Target Support Files/Pods-NameCardOCRUITests/Pods-NameCardOCRUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CA43A51A80D5BE5FAC2CAE1B /* Pods-NameCardOCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NameCardOCR.release.xcconfig"; path = "Target Support Files/Pods-NameCardOCR/Pods-NameCardOCR.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 				120E0FF72247ACCE007B3E7A /* AppDelegate.swift */,
 				120E0FF92247ACCE007B3E7A /* ViewController.swift */,
 				120E10312247AE7C007B3E7A /* ViewController+Extensions.swift */,
-				120E0FFB2247ACCE007B3E7A /* Main.storyboard */,
+				AC538592247BF53E0084AA32 /* Main.storyboard */,
 				122323A42253C621009DE7D4 /* LaunchScreen.storyboard */,
 				120E0FFE2247ACCF007B3E7A /* Assets.xcassets */,
 				120E10032247ACCF007B3E7A /* Info.plist */,
@@ -347,7 +347,7 @@
 				12370E09224E160B00170974 /* tessdata in Resources */,
 				122323A52253C621009DE7D4 /* LaunchScreen.storyboard in Resources */,
 				120E0FFF2247ACCF007B3E7A /* Assets.xcassets in Resources */,
-				120E0FFD2247ACCE007B3E7A /* Main.storyboard in Resources */,
+				AC538593247BF53E0084AA32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,18 +440,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NameCardOCR/Pods-NameCardOCR-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Anchors/Anchors.framework",
-				"${BUILT_PRODUCTS_DIR}/TesseractiOSSDK/TesseractOCR.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-NameCardOCR/Pods-NameCardOCR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchors.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-NameCardOCR/Pods-NameCardOCR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -512,17 +505,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		120E0FFB2247ACCE007B3E7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				120E0FFC2247ACCE007B3E7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		120E101A2247ACD0007B3E7A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -575,7 +557,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -630,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -649,7 +631,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VS72W76QNP;
+				DEVELOPMENT_TEAM = 4YQGFBRPPT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -657,7 +639,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NameCardOCR/PrefixHeader.pch";
 				INFOPLIST_FILE = NameCardOCR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -681,7 +663,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VS72W76QNP;
+				DEVELOPMENT_TEAM = 4YQGFBRPPT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -689,7 +671,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NameCardOCR/PrefixHeader.pch";
 				INFOPLIST_FILE = NameCardOCR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

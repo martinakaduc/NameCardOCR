@@ -66,15 +66,15 @@ final class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         // Sets the status bar to hidden when the view has finished appearing
-        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
-        statusBar.isHidden = true
+        // let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        // statusBar.isHidden = true
         self.captureSession.startRunning()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         // Sets the status bar to visible when the view is about to disappear
-        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
-        statusBar.isHidden = false
+        // let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        // statusBar.isHidden = false
         self.captureSession.stopRunning()
     }
     

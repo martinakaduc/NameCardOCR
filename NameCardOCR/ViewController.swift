@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     private let processRecognize = ProcessRecognize()
     private let resultViewController = ResultViewController()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         cameraController.delegate = self
@@ -34,9 +33,6 @@ class ViewController: UIViewController {
         boxService.delegate = self
         findTextArea.delegate = self
         processRecognize.delegate = self
-        
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {

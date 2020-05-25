@@ -9,7 +9,7 @@ DEPENDENCIES:
   - TesseractiOSSDK
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Anchors
     - OpenCV2
     - TesseractiOSSDK
@@ -21,4 +21,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 2c8335f70213608162a558c2aaf22dbf1b948af5
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.1
